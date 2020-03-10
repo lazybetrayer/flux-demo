@@ -1,3 +1,4 @@
+---
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -46,7 +47,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:1.16-perl
+        image: nginx:1-alpine-perl
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
